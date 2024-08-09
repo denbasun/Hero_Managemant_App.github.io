@@ -1,7 +1,7 @@
 {
   "name": "hero_admin_panel",
   "version": "0.1.0",
-  "homepage": "https://denbasun.github.io/Hero_Management_App/build",
+  "homepage": "hero-managemant-app-github-io.vercel.app",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
