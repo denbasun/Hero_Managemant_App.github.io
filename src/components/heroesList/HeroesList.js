@@ -32,7 +32,7 @@ const HeroesList = () => {
     }, []);
 
     const onDelete = useCallback((id) =>{
-        request(`https://vercel-api-github-io.vercel.app/api/data/heroes${id}`, 'DELETE')
+        request(`https://json-server-github-io.vercel.app/heroes${id}`, 'DELETE')
             .then(data => console.log(data, "Deleted"))
             .then(dispatch(heroDeleted(id)))
             .catch(err => console.log(err));
