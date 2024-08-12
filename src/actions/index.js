@@ -5,7 +5,7 @@ export const fetchHeroes = (request) => (dispatch) =>{
     dispatch(heroesFetching());
 
         request("https://json-server-github-io.vercel.app/heroes")
-            .then(data => dispatch(heroesFetched(data.heroes)))
+            .then(data => dispatch(heroesFetched(data)))
             .catch(() => dispatch(heroesFetchingError()))
 }
 
@@ -13,7 +13,7 @@ export const fetchFilters = (request) => (dispatch) =>{
     dispatch(filtersFetching());
 
         request("https://json-server-github-io.vercel.app/filters")
-            .then(data => dispatch(filtersFetched(data.filters)))
+            .then(data => dispatch(filtersFetched(data)))
             .catch(() => dispatch(filtersFetchingError()))
 }
 
