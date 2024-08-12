@@ -22,7 +22,7 @@ const HeroesAddForm = () => {
             element: heroElement
         }
        
-        request("https://json-server-github-io.vercel.app/heroes", "POST", JSON.stringify(newHero))
+        request("https://vercel-api-github-io.vercel.app/api/data/heroes", "POST", JSON.stringify(newHero))
             .then(res => console.log(res, 'Sending successful'))
             .then(dispatch(heroCreated(newHero)))
             .catch(err => console.log(err));
