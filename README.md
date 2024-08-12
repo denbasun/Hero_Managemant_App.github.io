@@ -1,4 +1,4 @@
-This is test project with hero admin panel built with React and Redux Toolkit, designed to manage a list of heroes from a computer game. The application offers an intuitive interface with the following features:
+This is test project with hero admin panel built with React, Redux Toolkit and Json-Server to store data. Designed to manage a list of heroes from a computer game. The application offers an intuitive interface with the following features:
 
 Create Heroes: Add new heroes to the list, including setting descriptions and magic elements. Data is saved to and retrieved from a local JSON file.
 
@@ -10,4 +10,4 @@ Filtering: Filter the hero list based on the assigned magic elements to find spe
 
 Smooth Transitions: Utilizes React Transition Group and CSS Transition to provide smooth animations and transitions for a more engaging user experience.
 
-Local Data Storage: Uses a local JSON file to store and manage hero data, with updates made upon form submission.
+Data Storage: Uses Json-Server with a JSON file to store and manage hero data, with updates made upon form submission.
