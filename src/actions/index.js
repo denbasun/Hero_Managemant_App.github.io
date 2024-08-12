@@ -4,7 +4,7 @@ import {filtersFetching, filtersFetched, filtersFetchingError} from '../componen
 export const fetchHeroes = (request) => (dispatch) =>{
     dispatch(heroesFetching());
 
-        request("https://vercel-api-github-io.vercel.app/api/data")
+        request("https://json-server-github-io.vercel.app/heroes")
             .then(data => dispatch(heroesFetched(data.heroes)))
             .catch(() => dispatch(heroesFetchingError()))
 }
@@ -12,7 +12,7 @@ export const fetchHeroes = (request) => (dispatch) =>{
 export const fetchFilters = (request) => (dispatch) =>{
     dispatch(filtersFetching());
 
-        request("https://vercel-api-github-io.vercel.app/api/data")
+        request("https://json-server-github-io.vercel.app/filters")
             .then(data => dispatch(filtersFetched(data.filters)))
             .catch(() => dispatch(filtersFetchingError()))
 }
